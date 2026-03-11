@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooking AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cooking AI</h1>
+      <p class="subtitle">Tell me what ingredients you have — I'll suggest real recipes.</p>
+    </header>
+
+    <section class="input-section">
+      <label for="ingredients">Your ingredients</label>
+      <textarea
+        id="ingredients"
+        placeholder="e.g. chicken, garlic, lemon, pasta, olive oil, onion..."
+        rows="3"
+      ></textarea>
+      <p class="hint">Separate ingredients with commas</p>
+      <button id="submit-btn" onclick="findRecipes()">Find Recipes</button>
+    </section>
+
+    <section id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p>Finding recipes...</p>
+    </section>
+
+    <section id="error-msg" class="hidden error"></section>
+
+    <section id="results" class="hidden">
+      <h2>Recipe Suggestions</h2>
+      <div id="recipe-cards"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

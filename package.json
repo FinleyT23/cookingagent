@@ -1,0 +1,17 @@
+{
+  "name": "cooking-agent",
+  "version": "1.0.0",
+  "description": "AI-powered cooking recipe suggester",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.37.0",
+    "express": "^4.18.2"
+  }
+}
